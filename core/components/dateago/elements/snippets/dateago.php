@@ -77,6 +77,11 @@ $month_arr = $modx->fromJSON($modx->lexicon('da_months'));
 $m = date("n", $date);
 $month = $month_arr[$m - 1];
 
+$day_of_week_arr = $modx->fromJSON($modx->lexicon('da_day_of_week'));
+$day_num = date("N", $date);
+$day_name = $day_of_week_arr[$day_num-1];
+
 $format = preg_replace("~(?<!\\\\)F~U", preg_replace('~(\w{1})~u','\\\${1}',$month), $dateFormat);
+$format = preg_replace("~(?<!\\\\)l~U", preg_replace('~(\w{1})~u','\\\${1}',$day_name), $format);
 
 return date($format ,$date);

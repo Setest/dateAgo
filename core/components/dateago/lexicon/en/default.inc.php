@@ -14,3 +14,4 @@ $_lang['da_minutes_less'] = 'Less than a minute ago';
 $_lang['da_hours'] = '["[[+hours]] hour ago","[[+hours]] hours ago","[[+hours]] hours ago"]';
 $_lang['da_hours_less'] = 'Less than an hour ago';
 $_lang['da_months'] = '["january","february","march","april","may","june","july","august","september","october","november","december"]';
+$_lang['da_day_of_week'] = '["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]';
